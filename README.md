@@ -1,8 +1,10 @@
 # Google translate for desktop
 
-Google translate PC desktop is the same Google translate but for Windows as desktop application.
+Google Translate Desktop is the same Google translate but for Windows PC as desktop application.
 
-Google Translate windows is a free multilingual neural machine translation service developed by Google, to translate text and websites from one language into another.
+Google Translate is a free multilingual neural machine translation service developed by Google, to translate text and websites from one language into another.
+
+Read more on the [Official Google Translate Desktop Website.](https://desktopapplicationsprovider.github.io/google-translate-desktop/).
 
 1.   It capable of:
      - Text translation: Translate between 108 languages by typing

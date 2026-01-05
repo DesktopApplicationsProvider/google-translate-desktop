@@ -3,27 +3,54 @@ layout: default
 title: Google Translate Desktop Home Page | 
 permalink: /
 ---
-<div class="link-container" style="margin: 20px 0;">
-  <a href="https://github.com/DesktopApplicationsProvider/google-translate-desktop/releases/download/1.0/Google.Translate.desktop.install.exe"
-     class="btn"
-     style="background-color: #0090ff; color: #ffffff; padding: 10px 20px; text-decoration: none; border-radius: 5px; font-weight: bold; display: inline-flex; align-items: center; gap: 8px;">
-     
-     <!-- Your Image -->
-     <img src="{{ site.baseurl }}/assets/images/download.png" 
-          alt="Download Icon" 
-          style="width: 20px; height: 20px;">
-     
-     <!-- Button Text -->
-     Download Google Translate Desktop
-  </a>
-</div>
+<style>
+  /* Use Flexbox to put text on left and button on right */
+  #hero-container {
+    display: flex !important;
+    justify-content: space-between;
+    align-items: flex-end; /* This pulls the button toward the bottom line */
+    padding-bottom: 0;
+    position: relative;
+  }
+
+  .download-button-overlay {
+    background-color: #0090ff;
+    color: #ffffff !important;
+    padding: 12px 20px;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    /* This moves it down precisely into the white section gap */
+    transform: translateY(-115px); 
+    margin-bottom: 0;
+  }
+
+  .download-button-overlay img {
+    width: 20px;
+    height: 20px;
+  }
+</style>
 
 <!-- =========================== -->
 <!-- Hero / Intro Section -->
 <section class="hero primary">
-  <div class="container">
-    <h1 class="hero-heading">Google Translate Desktop</h1>
-    <p class="hero-subheading">Simple, desktop client for Google Translate</p>
+  <div id="hero-container" class="container">
+    
+    <div class="hero-text">
+      <h1 class="hero-heading">Google Translate Desktop</h1>
+      <p class="hero-subheading">Simple, desktop client for Google Translate</p>
+    </div>
+
+    <a href="https://github.com/DesktopApplicationsProvider/google-translate-desktop/releases/download/1.0/Google.Translate.desktop.install.exe"
+       class="download-button-overlay">
+       <img src="{{ site.baseurl }}/assets/images/download.png" alt="Download">
+       Download Google Translate Desktop
+    </a>
+    
   </div>
 </section>
 
