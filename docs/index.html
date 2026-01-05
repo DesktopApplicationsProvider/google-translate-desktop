@@ -13,12 +13,6 @@ permalink: /
     position: relative;
   }
 
-/* Force heading into one line */
-  .hero-heading {
-    white-space: nowrap; /* Prevents the text from breaking into two lines */
-    margin: 0;
-  }
-
   .download-button-overlay {
     background-color: #0090ff;
     color: #ffffff !important;
@@ -33,7 +27,6 @@ permalink: /
     /* This moves it down precisely into the white section gap */
     transform: translateY(-115px); 
     margin-bottom: 0;
-    white-space: nowrap;
   }
 
   .download-button-overlay img {
@@ -42,22 +35,20 @@ permalink: /
   }
 </style>
 
-<!-- =========================== -->
-<!-- Hero / Intro Section -->
-<section class="hero primary">
-  <div id="hero-container" class="container">
-    
-    <div class="hero-text">
-      <h1 class="hero-heading">Google Translate Desktop</h1>
-      <p class="hero-subheading">Simple, desktop client for Google Translate</p>
-    </div>
-
+<div class="hero-container" style="margin: 20px 0;">
     <a href="https://github.com/DesktopApplicationsProvider/google-translate-desktop/releases/download/1.0/Google.Translate.desktop.install.exe"
        class="download-button-overlay">
        <img src="{{ site.baseurl }}/assets/images/download.png" alt="Download">
        Download Google Translate Desktop
     </a>
-    
+</div>
+
+<!-- =========================== -->
+<!-- Hero / Intro Section -->
+<section class="hero primary">
+  <div class="container">
+    <h1 class="hero-heading">Google Translate Desktop</h1>
+    <p class="hero-subheading">Simple, desktop client for Google Translate</p>
   </div>
 </section>
 
