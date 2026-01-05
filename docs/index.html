@@ -13,6 +13,12 @@ permalink: /
     position: relative;
   }
 
+/* Force heading into one line */
+  .hero-heading {
+    white-space: nowrap; /* Prevents the text from breaking into two lines */
+    margin: 0;
+  }
+
   .download-button-overlay {
     background-color: #0090ff;
     color: #ffffff !important;
@@ -24,6 +30,7 @@ permalink: /
     align-items: center;
     gap: 8px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    position: absolute;
     /* This moves it down precisely into the white section gap */
     transform: translateY(-115px); 
     margin-bottom: 0;
