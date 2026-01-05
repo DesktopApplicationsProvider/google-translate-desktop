@@ -32,7 +32,7 @@ social:
 #  linkedin: "https://linkedin.com/in/your_profile" # Optional
 
 # Optionally include Google Analytics tracking
-#google_analytics: "UA‑XXXXXXXXX‑X"  # Uncomment and replace with your ID
+google_analytics: "G-FP21LR0W81"  # Uncomment and replace with your ID
 
 # =========================
 # Plugins (if required)
