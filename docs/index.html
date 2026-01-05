@@ -4,13 +4,12 @@ title: Google Translate Desktop Home Page |
 permalink: /
 ---
 <style>
-  /* Use Flexbox to put text on left and button on right */
-  #hero-container {
+  /* Flexbox handles the horizontal split */
+  .hero-flex-wrapper {
     display: flex !important;
-    justify-content: space-between;
-    align-items: flex-end; /* This pulls the button toward the bottom line */
-    padding-bottom: 0;
-    position: relative;
+    justify-content: space-between; /* Pushes text left, button right */
+    align-items: center; /* Aligns them vertically centered with each other */
+    width: 100%;
   }
 
   .download-button-overlay {
@@ -24,24 +23,42 @@ permalink: /
     align-items: center;
     gap: 8px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-    /* This moves it down precisely into the white section gap */
+    white-space: nowrap; /* Keeps the button text on one line */
     transform: translateY(-115px); 
-    margin-bottom: 0;
   }
 
   .download-button-overlay img {
     width: 20px;
     height: 20px;
   }
+
+  /* Remove extra margins that create gaps */
+  .hero-heading {
+    margin-top: 0;
+    margin-bottom: 5px;
+  }
+  
+  .hero-subheading {
+    margin-top: 0;
+  }
 </style>
 
-<div class="hero-container" style="margin: 20px 0;">
-    <a href="https://github.com/DesktopApplicationsProvider/google-translate-desktop/releases/download/1.0/Google.Translate.desktop.install.exe"
-       class="download-button-overlay">
-       <img src="{{ site.baseurl }}/assets/images/download.png" alt="Download">
-       Download Google Translate Desktop
-    </a>
-</div>
+<section class="hero primary">
+  <div class="container">
+    <div class="hero-flex-wrapper">
+      <div class="hero-text-group">
+        <h1 class="hero-heading">Google Translate Desktop</h1>
+        <p class="hero-subheading">Simple, desktop client for Google Translate</p>
+      </div>
+
+      <a href="https://github.com/DesktopApplicationsProvider/google-translate-desktop/releases/download/1.0/Google.Translate.desktop.install.exe"
+         class="download-button-overlay">
+         <img src="{{ site.baseurl }}/assets/images/download.png" alt="Download">
+         Download Google Translate Desktop
+      </a>
+    </div>
+  </div>
+</section>
 
 <!-- =========================== -->
 <!-- Hero / Intro Section -->
